@@ -21,7 +21,7 @@ int main()
     cin >> n;
     for (int i = 1; i <= n; i++)
     {
-        if (i == 1)
+        /*if (i == 1)
             cout << 0 << "\n";
         else if (i == 2)
             cout << 6 << "\n";
@@ -31,6 +31,12 @@ int main()
             long long int j = i-2,k=p*(p-1)/2;
             k -=4*j*(j+1);
             cout<<k<<"\n";
-        }
+        }*/
+        
+        int s=i*i;
+        int t=(s*(s-1))/2;
+        cout<<t-(4*(i-1)*(i-2))<<"\n";
+        
+        // i simply made the formula without any exceptional cases
     }
 }
